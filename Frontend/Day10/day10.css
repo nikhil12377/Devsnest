@@ -1,0 +1,44 @@
+.gridder {
+  height: 400px;
+  width: 400px;
+  margin-top: 100px;
+  margin-left: 350px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  border: 2px solid white;
+}
+
+.flip {
+  transform: rotateY(180deg);
+}
+
+img,
+.frame,
+.front,
+.back {
+  width: 159px;
+  height: 200px;
+}
+
+.frame {
+  margin: 50px;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.back,
+.front {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.front {
+  z-index: 2;
+  background-color: black;
+}
+
+.back {
+  transform: rotatex(180deg);
+}
