@@ -1,0 +1,49 @@
+body {
+  background-color: peru;
+}
+
+.heading {
+  margin-top: 40px;
+  font-size: 40px;
+}
+
+.container {
+  text-align: center;
+}
+
+.todo {
+  width: 500px;
+  height: 30px;
+}
+
+.add {
+  border-radius: 10%;
+  margin-top: 5px;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+span {
+  font-size: 25px;
+}
+
+li {
+  font-size: 25px;
+}
+
+.trash {
+  background-color: peru;
+  border: none;
+  cursor: pointer;
+}
+
+.line {
+  stroke: black;
+}
