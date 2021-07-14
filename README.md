@@ -1,1 +1,1 @@
-This repo is for the take home assignments
+Random meme generator app using api
