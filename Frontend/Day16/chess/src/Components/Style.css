@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  border: 20px solid black;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -100px;
+}
+
+.bord {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+  border: 2px solid white;
+
+  /* box-shadow: 0px 0px 20px 5px rgba(32, 31, 31, 0.5), 0px 0px 6px 2px grey; */
+}
+
+.card1 {
+  /* margin: 0px -4px; */
+  height: 25px;
+  width: 25px;
+  background-color: white;
+}
+
+.card2 {
+  /* margin: 0px -4px; */
+  height: 25px;
+  width: 25px;
+  background-color: black;
+}
