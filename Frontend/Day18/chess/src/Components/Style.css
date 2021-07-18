@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  border: 20px solid black;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -100px;
+}
+
+.bord {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+  border: 2px solid white;
+}
+
+.card {
+  height: 25px;
+  width: 25px;
+  background-color: white;
+}
+
+.card2 {
+  height: 25px;
+  width: 25px;
+  background-color: black;
+}
