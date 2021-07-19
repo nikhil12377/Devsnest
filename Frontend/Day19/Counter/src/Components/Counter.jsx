@@ -1,31 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 
-export default class Counter extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      counter: 0,
-    };
-  }
-  changeCounter() {
-    this.setState((state) => {
-      return { counter: state.counter + 1 };
-    });
-  }
-  render() {
-    let myStyle = {
-      display: "inline-block",
-    };
-    return (
-      <div className="container" style={myStyle}>
-        <button
-          onClick={() => {
-            this.changeCounter();
-          }}
-        >
-          {this.state.counter}
-        </button>
-      </div>
-    );
-  }
+export default function Counter() {
+  var [counter, setCounter] = useState(0);
+  let myStyle = {
+    display: "inline-block",
+  };
+  return (
+    <div className="container" style={myStyle}>
+      <button
+        onClick={() => {
+          setCounter(counter + 1);
+        }}
+      >
+        {counter}
+      </button>
+    </div>
+  );
 }
+
