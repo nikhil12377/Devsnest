@@ -44,6 +44,7 @@ require('./middlewares/passport')(passport);
 app.use('/passport', require('./routes/passport'));
 app.use('/products', require('./routes/products'));
 app.use('/stream', require('./routes/stream'));
+app.use('/stripe', require('./routes/stripe'));
 
 // this line to generate 100 random data for products
 // require('./utils/init')
